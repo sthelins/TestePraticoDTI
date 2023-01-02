@@ -1,0 +1,48 @@
+package canis;
+
+public class Atributos {
+	private double distanciaKm;
+	private int CaesPequenos;
+	private int CaesGrandes;
+	private double Preco;
+	private String DiaDaSemana;
+	
+	
+	
+	public String getDiaDaSemana() {
+		return diaDaSemana;
+	}
+	public void setDiaDaSemana(String diaDaSemana) {
+		this.diaDaSemana = diaDaSemana;
+	}
+	public double getDistanciaKm() {
+		return distanciaKm;
+	}
+	public void setDistanciaKm(double distanciaKm) {
+		this.distanciaKm = distanciaKm;
+	}
+	public int getCaesPequenos() {
+		return CaesPequenos;
+	}
+	public void setCaesPequenos(int caesPequenos) {
+		CaesPequenos = caesPequenos;
+	}
+	public int getCaesGrandes() {
+		return CaesGrandes;
+	}
+	public void setCaesGrandes(int caesGrandes) {
+		CaesGrandes = caesGrandes;
+	}
+	public double getPreco() {
+		return preco;
+	}
+	public void setPreco(double preco) {
+		this.preco = preco;
+	}
+	
+	public void Precificacao() {
+		System.out.println("precificacao ");
+	}
+	
+
+}

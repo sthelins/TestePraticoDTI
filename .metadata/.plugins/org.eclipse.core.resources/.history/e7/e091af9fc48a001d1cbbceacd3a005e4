@@ -1,0 +1,17 @@
+package canis;
+
+public class CaninoFeliz extends Atributos{
+	
+	
+	public void Precificacao(int CaesPequenos, int CaesGrandes, String DiaDaSemana, double Preco) {
+		if(DiaDaSemana == "quarta") {
+			preco = (CaesPequenos * 20 ) + (CaesGrandes * 40)
+		}else {
+			preco = (CaesPequenos * 22) + (CaesGrandes * 48)
+		}
+		
+		return preco
+	}
+	
+	
+}

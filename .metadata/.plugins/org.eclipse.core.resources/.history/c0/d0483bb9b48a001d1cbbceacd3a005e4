@@ -1,0 +1,9 @@
+package canis;
+
+public class CaninoFeliz extends Atributos{
+	
+	public CaninoFeliz(double distanciaKm, int caesPequenos, int caesGrandes, double preco) {
+		super(distanciaKm, caesPequenos, caesGrandes, preco);
+		
+	public double distanciaKM = 20
+}

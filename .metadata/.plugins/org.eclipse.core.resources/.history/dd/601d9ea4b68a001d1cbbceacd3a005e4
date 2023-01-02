@@ -1,0 +1,8 @@
+package canis;
+
+public class CaninoFeliz extends Atributos{
+	
+	public void Precificacao() {
+		System.out.println("precificacao da Canino Feliz");
+	}
+}

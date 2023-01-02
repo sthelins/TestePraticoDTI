@@ -1,0 +1,84 @@
+package canis;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		//Canino Feliz
+		CaninoFeliz C1 = new CaninoFeliz();
+		C1.setDistanciaKm(2);
+		C1.setPreco(0);
+		System.out.println("Digite a data");
+		System.out.print("Dia: ");
+		int d = entrada.nextInt();
+		
+		System.out.print("Mês: : ");
+		int m = entrada.nextInt();
+		
+		if(m == 1 | m == 01) {
+			m = 11;
+		} else if (m == 2 | m == 02) {
+			m = 12;
+		} else if (m == 3 | m == 03) {
+			m = 1;
+		} else if (m == 4 | m == 04) {
+			m = 2;
+		}else if (m == 5 | m == 05) {
+			m = 3;
+		} else if (m == 6 | m == 06) {
+			m = 4;
+		} else if (m == 7 | m == 07) {
+			m = 5;
+		} else if (m == 8) {
+			m = 6;
+		} else if (m == 9) {
+			m = 7;
+		}else if (m == 10) {
+			m = 8;
+		} else if (m == 11) {
+			m = 9;
+		} else if (m == 12) {
+			m = 10;
+		} else {
+			System.out.println("mês inválido. Recomeçe!");
+			System.exit(0);
+		}
+		
+		
+		System.out.print("Ano: ");
+		int a = entrada.nextInt();
+		a = a - 2000;
+		int c = 20;
+		int k = ( d + ((13 * m - 1) / 5) + a + (a/4) + (c / 4) + (5 * c) ) % 7 - 1;
+		System.out.println(k);                                       
+	
+		
+		//System.out.println("Caes pequenos: ");
+		//C1.setCaesPequenos(entrada.nextInt());
+		
+		//System.out.println("Caes Grandes: ");
+		//C1.setCaesGrandes(entrada.nextInt());
+		
+		
+		
+		
+		//double P1 = C1.Precificacao(C1.getCaesPequenos(), C1.getCaesGrandes(), C1.getDiaDaSemana(), C1.getPreco());
+		
+		//System.out.println(P1);
+		
+		
+		//Vai Rex
+		//VaiRex C2 = new VaiRex();
+		//C2.setDistanciaKm(1.7);
+		//C2.setPreco(0);
+		
+		//double P2 = C2.Precificacao(C1.getCaesPequenos(), C1.getCaesGrandes(), C1.getDiaDaSemana(), C2.getPreco());
+		
+		//System.out.println(P2);
+		
+		
+	}
+}

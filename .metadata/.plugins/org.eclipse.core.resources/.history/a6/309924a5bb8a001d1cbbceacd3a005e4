@@ -1,0 +1,22 @@
+package canis;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		CaninoFeliz C1 = new CaninoFeliz();
+		C1.setDistanciaKm(20.0);
+		System.out.println("Caes pequenos: ");
+		C1.setCaesPequenos(entrada.nextInt());
+		C1.setCaesGrandes(1);
+		C1.setDiaDaSemana("quarta");
+		System.out.println(C1.getCaesPequenos() + "a" + C1.getDistanciaKm());
+		
+		C1.Precificacao();
+
+	}
+
+}

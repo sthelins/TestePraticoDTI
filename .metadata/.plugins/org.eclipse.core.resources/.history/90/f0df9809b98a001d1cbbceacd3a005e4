@@ -1,0 +1,49 @@
+package canis;
+
+public class Atributos {
+	private double DistanciaKm;
+	private int CaesPequenos;
+	private int CaesGrandes;
+	private double Preco;
+	private String DiaDaSemana;
+	
+	
+	public double getDistanciaKm() {
+		return DistanciaKm;
+	}
+	public void setDistanciaKm(double distanciaKm) {
+		DistanciaKm = distanciaKm;
+	}
+	public int getCaesPequenos() {
+		return CaesPequenos;
+	}
+	public void setCaesPequenos(int caesPequenos) {
+		CaesPequenos = caesPequenos;
+	}
+	public int getCaesGrandes() {
+		return CaesGrandes;
+	}
+	public void setCaesGrandes(int caesGrandes) {
+		CaesGrandes = caesGrandes;
+	}
+	public double getPreco() {
+		return Preco;
+	}
+	public void setPreco(double preco) {
+		Preco = preco;
+	}
+	public String getDiaDaSemana() {
+		return DiaDaSemana;
+	}
+	public void setDiaDaSemana(String diaDaSemana) {
+		DiaDaSemana = diaDaSemana;
+	}
+	
+	
+	public void Precificacao(double distanciaKm, int caesPequenos, int caesGrandes, double preco, String diaDaSemana) {
+		if(caesPequenos> caesGrandes) {
+		System.out.println("precificacao ");
+	}
+	
+
+}

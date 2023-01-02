@@ -1,0 +1,16 @@
+package canis;
+
+public class CaninoFeliz extends Atributos{
+	
+	
+	public void Precificacao(int CaesPequenos, int CaesGrandes) {
+		if(CaesPequenos > CaesGrandes) {
+			System.out.println("ola");
+		} else {
+		System.out.println("nao");
+		}
+		
+	}
+	
+	
+}

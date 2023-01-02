@@ -1,0 +1,11 @@
+package canis;
+
+public class CaninoFeliz extends Atributos{
+	
+	
+	public void Precificacao(int CaesPequenos, int CaesGrandes, String DiaDaSemana, double Preco) {
+		
+	}
+	
+	
+}

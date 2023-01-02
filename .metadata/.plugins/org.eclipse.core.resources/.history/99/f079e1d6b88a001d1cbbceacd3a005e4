@@ -1,0 +1,11 @@
+package canis;
+
+public class CaninoFeliz extends Atributos{
+	
+	public void Precificacao(double distanciaKm, int caesPequenos, int caesGrandes, double preco, String diaDaSemana) {
+		if(caesPequenos> caesGrandes) {
+			System.out.println("caes pequenos maior");
+		}
+		System.out.println("precificacao da Canino Feliz");
+	}
+}

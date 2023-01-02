@@ -1,0 +1,44 @@
+package canis;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		CaninoFeliz C1 = new CaninoFeliz();
+		C1.setDistanciaKm(2);
+		C1.setPreco(0);
+		
+		System.out.println("Caes pequenos: ");
+		C1.setCaesPequenos(entrada.nextInt());
+		
+		System.out.println("Caes Grandes: ");
+		C1.setCaesGrandes(entrada.nextInt());
+		
+		System.out.println("Dia da semana: ");
+		C1.setDiaDaSemana(entrada.next());
+		
+		System.out.println(C1.getCaesPequenos());
+		
+		C1.Precificacao(C1.getCaesPequenos(), C1.getCaesGrandes(), C1.getDiaDaSemana(), C1.getPreco());
+
+		
+		String columnist1 = "Stephen Edwin King";
+        String columnist2 = "John Gilbert";
+        String columnist3 = "stephenedwin king";
+
+        // Test any of the above Strings equal to one another
+boolean equals1 = columnist1.equalsIgnoreCase(columnist2);
+boolean equals2 = columnist1.equalsIgnoreCase(columnist3);
+System.out.println();
+        // Display the results of the equality checks.
+System.out.println("\"" + columnist1 + "\" equals \"" +
+            columnist2 + "\"? " + equals1);
+System.out.println("\"" + columnist1 + "\" equals \"" +
+            columnist3 + "\"? " + equals2);
+System.out.println();
+	}
+
+}
