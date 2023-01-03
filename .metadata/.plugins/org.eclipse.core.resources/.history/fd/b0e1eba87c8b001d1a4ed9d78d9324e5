@@ -4,11 +4,10 @@ public class CaninoFeliz extends Atributos{
 	
 	
 	public double Precificacao(int CaesPequenos, int CaesGrandes, String DiaDaSemana, double Preco) {
-		if(DiaDaSemana == "0" | DiaDaSemana == "6") {
-			Preco = (CaesPequenos * 24) + (CaesGrandes * 48);
-		}else {
-			
+		if(DiaDaSemana >= 1 && DiaDaSemana <= 5) {
 			Preco = (CaesPequenos * 20 ) + (CaesGrandes * 40);
+		}else {
+			Preco = (CaesPequenos * 24) + (CaesGrandes * 48);
 		}
 		return Preco;
 	}

@@ -3,7 +3,7 @@ package canis;
 public class Atributos {
 	private double DistanciaKm;
 	private double Preco;
-	private String nome;
+	private String DiaDaSemana;
 	
 	
 	public double getDistanciaKm() {
@@ -18,11 +18,11 @@ public class Atributos {
 	public void setPreco(double preco) {
 		Preco = preco;
 	}
-	public String getNome() {
-		return nome;
+	public String getDiaDaSemana() {
+		return DiaDaSemana;
 	}
-	public void setNome(String nome) {
-		this.nome = nome;
+	public void setDiaDaSemana(String diaDaSemana) {
+		DiaDaSemana = diaDaSemana;
 	}
 	
 	

@@ -1,0 +1,101 @@
+package canis;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Digite a data");
+		
+		System.out.print("Dia: ");
+		String d = entrada.next();
+		
+		System.out.print("Mês: : ");
+		String m = entrada.next();
+		
+		System.out.print("Ano: ");
+		String a = entrada.next();
+		
+		String DiaDaSemana =  getDayWeek(d +"/"+ m +"/"+ a);
+		
+		
+		System.out.println("Caes pequenos: ");
+		int CaesPequenos = entrada.nextInt();
+		
+		System.out.println("Caes Grandes: ");
+		int CaesGrandes = entrada.nextInt();
+		
+		
+		//Canino Feliz
+		CaninoFeliz C1 = new CaninoFeliz();
+		C1.setDistanciaKm(2);
+		C1.setPreco(0);
+		double P1 = C1.Precificacao(CaesPequenos, CaesGrandes, DiaDaSemana, C1.getPreco());
+		
+		//Vai Rex
+		VaiRex C2 = new VaiRex();
+		C2.setDistanciaKm(1.7);
+		C2.setPreco(0);
+		double P2 = C2.Precificacao(CaesPequenos, CaesGrandes, DiaDaSemana, C2.getPreco());
+		
+		//ChowChawgas
+		ChowChawgas C3 = new ChowChawgas();
+		C3.setDistanciaKm(0.8);
+		C3.setPreco(0);
+		double P3 = C3.Precificacao(CaesPequenos, CaesGrandes, C3.getPreco());
+		
+		if(P1 < P2 && P1 < P3) {
+			System.out.println("O melhor lugar será o Canino Feliz e o preço será R$" + P1);
+		} else if (P2 < P1 && P2 < P1) {
+			System.out.println("O melhor lugar será o Vai Rex e o preço será R$" + P2);
+		} else if(P3 < P1 && P3 < P2) {
+			System.out.println("O melhor lugar será o ChowChawgas e o preço será R$" + P3);
+		} else if(P1 == P2 ) {
+			System.out.println("O melhor lugar será o Vai Rex e o preço será R$" + P2);
+		} else if(P1 == P3) {
+			System.out.println("O melhor lugar será o ChowChawgas e o preço será R$" + P3);
+		} else if(P2 == P3) {
+			System.out.println("O melhor lugar será o ChowChawgas e o preço será R$" + P3);
+		}
+	
+	}
+	
+	 public static String getDayWeek(String date){ //ex 07/03/2017
+		    String dayWeek = "---";
+		    GregorianCalendar gc = new GregorianCalendar();
+		    try {
+		        gc.setTime(new SimpleDateFormat("dd/MM/yyyy").parse(date));
+		        switch (gc.get(Calendar.DAY_OF_WEEK)) {
+		            case Calendar.SUNDAY:
+		                dayWeek = "0";
+		                break;
+		            case Calendar.MONDAY:
+		                dayWeek = "1";
+		                break;
+		            case Calendar.TUESDAY:
+		                dayWeek = "2";
+		            break;
+		            case Calendar.WEDNESDAY:
+		                dayWeek = "3";
+		                break;
+		            case Calendar.THURSDAY:
+		                dayWeek = "4";
+		                break;
+		            case Calendar.FRIDAY:
+		                dayWeek = "5";
+		                break;
+		            case Calendar.SATURDAY:
+		                dayWeek = "6";
+		        }
+		    } catch (ParseException e) {
+		        e.printStackTrace();
+		    }
+		    return dayWeek;
+		}
+}

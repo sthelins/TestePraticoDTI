@@ -44,7 +44,7 @@ public class main {
 		VaiRex canil2 = new VaiRex();
 		canil2.setDistanciaKm(1.7);
 		canil2.setPreco(0);
-		canil2.setNome("Vai Rex");
+		canil2.setNome("VaiRex");
 		double precoCanil2 = canil2.Precificacao(CaesPequenos, CaesGrandes, DiaDaSemana, canil2.getPreco());
 		
 		//ChowChawgas
@@ -55,17 +55,17 @@ public class main {
 		double precoCanil3 = canil3.Precificacao(CaesPequenos, CaesGrandes, canil3.getPreco());
 		
 		if(precoCanil1 < precoCanil2 && precoCanil1 < precoCanil3) {
-			System.out.println("O melhor lugar será o " + canil1.getNome() +" e o preço será R$" + precoCanil1);
+			System.out.println("O melhor lugar será o " + canil1 +" e o preço será R$" + precoCanil1);
 		} else if (precoCanil2 < precoCanil1 && precoCanil2 < precoCanil1) {
-			System.out.println("O melhor lugar será o " + canil2.getNome() + " e o preço será R$" + precoCanil2);
+			System.out.println("O melhor lugar será o " + canil2 + " e o preço será R$" + precoCanil2);
 		} else if(precoCanil3 < precoCanil1 && precoCanil3 < precoCanil2) {
-			System.out.println("O melhor lugar será o " + canil3.getNome() + " e o preço será R$" + precoCanil3);
+			System.out.println("O melhor lugar será o " + canil3 + " e o preço será R$" + precoCanil3);
 		} else if(precoCanil1 == precoCanil2 ) {
-			System.out.println("O melhor lugar será o " + canil2.getNome() + " e o preço será R$" + precoCanil2);
+			System.out.println("O melhor lugar será o " + canil2 + " e o preço será R$" + precoCanil2);
 		} else if(precoCanil1 == precoCanil3) {
-			System.out.println("O melhor lugar será o " + canil3.getNome() + " e o preço será R$" + precoCanil3);
+			System.out.println("O melhor lugar será o " + canil3 + " e o preço será R$" + precoCanil3);
 		} else if(precoCanil2 == precoCanil3) {
-			System.out.println("O melhor lugar será o " + canil3.getNome() + " e o preço será R$" + precoCanil3);
+			System.out.println("O melhor lugar será o " + canil3 + " e o preço será R$" + precoCanil3);
 		}
 	
 	}
